@@ -9,15 +9,13 @@ import SwiftUI
 import Combine
 import Domain
 
-public struct PostView: View {
-
-    @ObservedObject private var service: PostService
-    private let navProvider: NavProviderProtocol
+public struct PostView: BaseView {
+    typealias State = [PostEntity]
+    typealias Effect = Void
+    typealias Service = PostService
     
-    init(service: PostService, navProvider: NavProviderProtocol) {
-        self.service = service
-        self.navProvider = navProvider
-    }
+    @ObservedObject var service: PostService
+    var navProvider: NavProviderProtocol
     
     public var body: some View {
         NavigationView {

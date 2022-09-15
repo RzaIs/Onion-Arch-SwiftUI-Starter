@@ -19,6 +19,7 @@
 		32B62E8B28B2DC58002F97DD /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B62E8A28B2DC58002F97DD /* Domain.framework */; };
 		32B62E8C28B2DC58002F97DD /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B62E8A28B2DC58002F97DD /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32B62EC228B2DEE4002F97DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B62EC128B2DEE4002F97DD /* Assets.xcassets */; };
+		32B824C128D3C766006D3B03 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B824C028D3C766006D3B03 /* BaseView.swift */; };
 		32FF24D528B521C4006949CA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF24D428B521C4006949CA /* PostService.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		32B62E8228B2DBF6002F97DD /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		32B62E8A28B2DC58002F97DD /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B62EC128B2DEE4002F97DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../CleanArchSwiftUI/Assets.xcassets; sourceTree = "<group>"; };
+		32B824C028D3C766006D3B03 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		32FF24D428B521C4006949CA /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3227F47128B5787200E5D4A7 /* BaseService.swift */,
+				32B824C028D3C766006D3B03 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				32B62E7B28B2DBA7002F97DD /* PresenterDI.swift in Sources */,
 				32B62E8328B2DBF6002F97DD /* PostView.swift in Sources */,
 				3227F47228B5787200E5D4A7 /* BaseService.swift in Sources */,
+				32B824C128D3C766006D3B03 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
