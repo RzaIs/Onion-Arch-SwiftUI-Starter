@@ -6,12 +6,25 @@
 //
 
 import SwiftUI
+import Domain
+import Presenter
+import Data
+import Swinject
 
 @main
 struct CleanArchSwiftUIApp: App {
+    
+    public static let appAssembler: Assembler = .init([
+        PresenterAssembly(),
+        DomainAssembly(),
+        DataAssembly(baseURL: "https://jsonplaceholder.typicode.com")
+    ])
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CleanArchSwiftUIApp.appAssembler.resolver
+                .resolve(NavProviderProtocol.self)!
+                .postView
         }
     }
 }
