@@ -14,7 +14,12 @@ class BaseService<State, Effect>: ObservableObject{
     @Published var hasError: Bool
     @Published var error: Error
     
-    init(state: State, effect: Effect, hasError: Bool = false, error: Error = NSError(domain: "Base", code: 1)) {
+    init(
+        state: State,
+        effect: Effect,
+        hasError: Bool = false,
+        error: Error = NSError(domain: "Base", code: 1)
+    ) {
         self.state = state
         self.effect = effect
         self.hasError = hasError

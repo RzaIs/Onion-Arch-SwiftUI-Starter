@@ -26,7 +26,7 @@ class PostService: BaseService<[PostEntity], Void> {
         do {
             try await self.syncPostUseCase.execute
         } catch {
-            await self.show(error: error)
+            self.show(error: error)
         }
         
     }
