@@ -35,3 +35,15 @@ class PostService: BaseService<[PostEntity], Void> {
         self.observePostsUseCase.observe.assign(to: &self.$state)
     }
 }
+
+protocol BaseView {
+    associatedtype State
+    associatedtype Effect
+    associatedtype Service: BaseService<State, Effect>
+}
+
+extension BaseView {
+    func viewAppear() {
+        
+    }
+}

@@ -27,6 +27,8 @@ struct PostDetails: View {
         }    }
 }
 
+#if DEBUG
+
 struct PostDetails_Previews: PreviewProvider {
     static var previews: some View {
         PostDetails(
@@ -39,3 +41,5 @@ struct PostDetails_Previews: PreviewProvider {
         ).frame(height: 200)
     }
 }
+
+#endif

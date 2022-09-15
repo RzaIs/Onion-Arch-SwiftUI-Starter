@@ -5,7 +5,7 @@
 //  Created by Rza Ismayilov on 22.08.22.
 //
 
-import Foundation
+import Domain
 import Swinject
 
 public protocol NavProviderProtocol {
@@ -21,8 +21,25 @@ class NavProvider: NavProviderProtocol {
     }
     
     var postView: PostView {
-        PostView(service: r.resolve(PostService.self)!)
+        r.resolve(PostView.self)!
     }
 }
 
+#if DEBUG
 
+class NavProviderMock: NavProviderProtocol {
+    
+    static let instance: NavProviderMock = .init()
+    
+    var postView: PostView {
+        PostView(
+            service: PostService(
+                syncPostUseCase: SyncPostUseCaseMock(),
+                observePostsUseCase: ObservePostsUseCaseMock()
+            ),
+            navProvider: NavProviderMock()
+        )
+    }
+}
+
+#endif

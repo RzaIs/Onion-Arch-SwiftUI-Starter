@@ -24,5 +24,12 @@ public class PresenterAssembly: Assembly {
                 observePostsUseCase: r.resolve(ObservePostsUseCase.self)!
             )
         }
+        
+        container.register(PostView.self) { r in
+            PostView(
+                service: r.resolve(PostService.self)!,
+                navProvider: r.resolve(NavProviderProtocol.self)!
+            )
+        }
     }
 }

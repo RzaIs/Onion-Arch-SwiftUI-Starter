@@ -5,10 +5,12 @@
 //  Created by Rza Ismayilov on 21.08.22.
 //
 
+import Foundation
 import RealmSwift
+import Realm
 
 class PostLocalDTO: Object {
-    @Persisted(primaryKey: true) var id: Int = 0
+    @Persisted(primaryKey: true) var id: Int = UUID().hashValue
     @Persisted var title: String = ""
     @Persisted var body: String = ""
     @Persisted var userId: Int = 0

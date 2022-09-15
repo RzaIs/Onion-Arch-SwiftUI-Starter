@@ -20,3 +20,14 @@ public class SyncPostsUseCase: BaseAsyncThrowsUseCase<Void> {
         }
     }
 }
+
+#if DEBUG
+
+public class SyncPostUseCaseMock: BaseAsyncThrowsUseCase<Void> {
+    public override init() { }
+    public override var execute: Void {
+        get async throws { }
+    }
+}
+
+#endif

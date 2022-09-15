@@ -29,8 +29,8 @@
 		32B62EED28B2E05F002F97DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32B62EEC28B2E05F002F97DD /* Alamofire */; };
 		32B62EF028B2E079002F97DD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 32B62EEF28B2E079002F97DD /* Realm */; };
 		32B62EF228B2E079002F97DD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32B62EF128B2E079002F97DD /* RealmSwift */; };
-		32B62EF828B2E126002F97DD /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B62EF728B2E126002F97DD /* Domain.framework */; };
-		32B62EF928B2E126002F97DD /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B62EF728B2E126002F97DD /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32B824BE28D3C083006D3B03 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B824BD28D3C083006D3B03 /* Domain.framework */; };
+		32B824BF28D3C083006D3B03 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B824BD28D3C083006D3B03 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32B62EF928B2E126002F97DD /* Domain.framework in Embed Frameworks */,
+				32B824BF28D3C083006D3B03 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +78,7 @@
 		32B62EE128B2DFA4002F97DD /* PostRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		32B62EE528B2DFB8002F97DD /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		32B62EE628B2DFB8002F97DD /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
-		32B62EF728B2E126002F97DD /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B824BD28D3C083006D3B03 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B62EF828B2E126002F97DD /* Domain.framework in Frameworks */,
+				32B824BE28D3C083006D3B03 /* Domain.framework in Frameworks */,
 				32B62EF228B2E079002F97DD /* RealmSwift in Frameworks */,
 				32B62EF028B2E079002F97DD /* Realm in Frameworks */,
 				32B62EED28B2E05F002F97DD /* Alamofire in Frameworks */,
@@ -230,7 +230,7 @@
 		32B62EF628B2E126002F97DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32B62EF728B2E126002F97DD /* Domain.framework */,
+				32B824BD28D3C083006D3B03 /* Domain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
